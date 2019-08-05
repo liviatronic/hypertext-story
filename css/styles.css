@@ -177,6 +177,25 @@ button a:hover {
     flex-direction: column;
 }
 
+.flex-bottom {
+    align-self: flex-end;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(0, 255, 21);
+}
+
 .hovered .flex-center {
     background-image: url("../images/img-pasta.gif");
     background-repeat: no-repeat;
