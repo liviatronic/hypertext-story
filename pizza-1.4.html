@@ -17,14 +17,21 @@
 </head>
 
 <body>
-    <p>Hmm, your vegetable selection is a little sparse. Do you...</p>
-    <ul>
-        <li><a href="pizza-2.3.html">Use some peppers and mushrooms from the back of the fridge for your
-                pie—it’s OK, they’re going in the oven anyway</a></li>
-        <li><a href="pizza.html">Reconsider</a></li>
-    </ul>
-
-    <script src="" async defer></script>
+    <div class="flex-container">
+        <div class="flex-item" id="left">
+            <h3>Good choice!</h3>
+            <p>Hmm, your vegetable selection is a little sparse. Do you...</p>
+            <video autoplay muted loop id="myVideo">
+                <source src="./images/vid-sauce.mp4" type="video/mp4">
+        </div>
+        <div class="flex-item" id="right">
+            <ul>
+                <li><a href="pizza-2.3.html">Use some peppers and mushrooms from the back of the fridge for your
+                        pie—it’s OK, they’re going in the oven anyway</a></li>
+                <li><a href="pizza.html">Reconsider</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

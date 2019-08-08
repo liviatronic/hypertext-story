@@ -202,6 +202,8 @@ em {
 }
 
 
+
+
 /* media styles */
 
 #myVideo {
@@ -224,21 +226,21 @@ em {
     z-index: -1;
 }
 
-#left img {
-    width: 100%;
-    margin-bottom: 7vh;
+.bg-chef {
+    background-image: url("../images/chef-kiss.gif");
+    background-size: 13.3vw;
+    background-blend-mode: multiply;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    background-color: black;
-    opacity: .4;
-    z-index: -1;
+.bg-lose {
+    background-image: url("../images/img-moe.gif");
+    background-size: 13.3vw;
 }
+
+.bg-red {
+    background-color: red;
+}
+
 
 /* class for button hover */
 .hovered .bg-hover {
@@ -279,9 +281,15 @@ em {
     padding: 5vw;
 }
 
+
+/* styling for half and half layout */
 #left {
-    /* background-color: red; */
     color: white;
+}
+
+#left img {
+    width: 100%;
+    margin-bottom: 7vh;
 }
 
 #right {

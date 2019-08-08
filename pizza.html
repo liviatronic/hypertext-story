@@ -17,16 +17,22 @@
 </head>
 
 <body>
-    <h2>Yay, everyone loves pizza!</h2>
-    <p>What kind of pizza do you want to make?</p>
-    <ul>
-        <li><a href="pizza-1.1.html">Cheese</a></li>
-        <li><a href="pizza-1.2.html">Pepperoni</a></li>
-        <li><a href="pizza-1.3.html">Hawaiian</a></li>
-        <li><a href="pizza-1.4.html">Veggie</a></li>
-    </ul>
-
-    <script src="" async defer></script>
+    <div class="flex-container">
+        <div class="flex-item" id="left">
+            <h3>Yay, everyone loves pizza!</h3>
+            <p>What kind of pizza do you want to make?</p>
+            <video autoplay muted loop id="myVideo">
+                <source src="./images/vid-pizza2.mp4" type="video/mp4">
+        </div>
+        <div class="flex-item" id="right">
+            <ul>
+                <li><a href="pizza-1.1.html">Cheese</a></li>
+                <li><a href="pizza-1.2.html">Pepperoni</a></li>
+                <li><a href="pizza-1.3.html">Hawaiian</a></li>
+                <li><a href="pizza-1.4.html">Veggie</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
