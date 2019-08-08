@@ -107,14 +107,14 @@ section {
     display: block;
 }
 
+/* basic text styles */
+
 body {
     color: black;
-    /* margin: 5vw; */
-}
-
-body.hovered {
-    background-image: url("/images/img-pasta.gif");
-    /* z-index: 100; */
+    text-align: left;
+    font-family: forma-djr-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
@@ -124,30 +124,35 @@ h1 {
     font-style: normal;
     font-size: 18vw;
     text-align: center;
-    line-height: 0.9;
+    line-height: 0.85;
     margin: 0 5vw;
 }
 
 h2 {
-    text-align: center;
-    font-family: trilby, serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 5vw;
+    font-weight: 500;
+    font-size: 9vw;
+    line-height: .9;
+    margin-bottom: 4vh;
 }
 
 h3 {
-    text-align: left;
-    font-family: forma-djr-text, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9vw;
+    font-weight: 500;
+    font-size: 6vw;
     line-height: .9;
+    margin-bottom: 5vh;
+}
+
+p {
+    margin-bottom: 2.5vh;
+    font-size: 2.8vw;
+    line-height: 1.2;
 }
 
 button a {
+    font-family: manicotti, sans-serif;
     text-decoration: none;
     color: white;
+    font-size: 8vw;
 }
 
 button {
@@ -157,28 +162,6 @@ button {
 
 button a:hover {
     color: rgb(0, 255, 21);
-}
-
-#myVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -10;
-}
-
-.flex-center {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.flex-bottom {
-    align-self: flex-end;
 }
 
 footer {
@@ -196,23 +179,104 @@ footer a:hover {
     color: rgb(0, 255, 21);
 }
 
-.hovered .flex-center {
+ul {
+    padding: 0;
+}
+
+ul li {
+    font-size: 5vw;
+    padding-bottom: 5vh;
+    line-height: .95;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+em {
+    font-family: manicotti, sans-serif;
+    color: rgb(0, 255, 21);
+    font-size: 15vw;
+    line-height: .8;
+}
+
+
+/* media styles */
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.bg-hover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#left img {
+    width: 100%;
+    margin-bottom: 7vh;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+}
+
+/* class for button hover */
+.hovered .bg-hover {
     background-image: url("../images/img-pasta.gif");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+/* flexbox layouts */
+
+/* fullscreen landing */
+.flex-center {
+    display: flex;
+    height: 94vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.flex-bottom {
+    align-self: flex-end;
+}
+
+
+/* half and half layout */
 .flex-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 100vh;
 }
 
 .flex-item {
-    height: 100vh;
-    padding: 3vw;
+    padding: 5vw;
 }
 
 #left {
@@ -231,39 +295,3 @@ footer a:hover {
 #right a:hover {
     color: green;
 }
-
-ul {
-    padding: 0;
-}
-
-ul li {
-    font-family: forma-djr-text, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vw;
-    padding-bottom: 3vh;
-    line-height: 1;
-    list-style-type: none;
-}
-
-li a {
-    text-decoration: none;
-}
-
-/* .gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.three-choice {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-}
-
-.three-choice p {
-    text-align: center;
-} */
